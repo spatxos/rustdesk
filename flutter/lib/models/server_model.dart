@@ -510,7 +510,7 @@ class ServerModel with ChangeNotifier {
       if (isAndroid && !client.authorized) {
         sendLoginResponse(client, true);
       }
-      //showLoginDialog(client);
+      ////showLoginDialog(client);
     } catch (e) {
       debugPrint("Failed to call loginRequest,error:$e");
     }
