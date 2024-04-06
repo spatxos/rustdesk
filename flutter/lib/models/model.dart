@@ -241,7 +241,7 @@ class FfiModel with ChangeNotifier {
     for (final element in data.cursorDataList) {
       updateLastCursorId(element);
       await handleCursorData(element);
-    }
+    } 
     if (data.lastCursorId.isNotEmpty) {
       updateLastCursorId(data.lastCursorId);
       handleCursorId(data.lastCursorId);
